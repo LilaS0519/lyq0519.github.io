@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机器学习基础 - AI知识库</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <i class="fas fa-robot" aria-hidden="true"></i>
+                <span>AI知识库</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" title="返回首页">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>首页</span>
+                </a>
+                <a href="categories.html" title="浏览分类">
+                    <i class="fas fa-folder" aria-hidden="true"></i>
+                    <span>分类</span>
+                </a>
+                <a href="updates.html" title="查看更新">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <span>更新</span>
+                </a>
+                <a href="about.html" title="关于本站">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <span>关于</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="content-section">
+            <h2>一、数学基础</h2>
+            <p>数学是AI的核心基础，以下几类数学知识是必须掌握的：</p>
+            <ul>
+                <li><strong>线性代数：</strong>理解矩阵运算、向量空间、特征值与特征向量等概念，这些在深度学习中尤为重要，如权重和输入的矩阵乘法。</li>
+                <li><strong>微积分：</strong>掌握微分、偏导数、链式法则等，这些在反向传播算法和优化中广泛应用。</li>
+                <li><strong>概率与统计：</strong>了解概率论、条件概率、贝叶斯定理、统计推断等概念，这些常用于构建和理解模型的概率分布。</li>
+                <li><strong>优化理论：</strong>理解梯度下降算法、学习率、最优化问题求解方法等，这些在模型训练和优化过程中至关重要。</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>二、编程基础</h2>
+            <p>编程是开发AI系统的基本技能，主要需要掌握以下内容：</p>
+            <ul>
+                <li><strong>Python：</strong>Python是AI最流行的编程语言，拥有丰富的库和框架，如NumPy、Pandas、Scikit-learn、TensorFlow、PyTorch等。</li>
+                <li><strong>数据处理与分析：</strong>掌握如何使用Python处理数据、进行数据清洗、特征提取以及数据可视化（如使用Matplotlib、Seaborn）。</li>
+                <li><strong>算法和数据结构：</strong>理解常见的算法（如排序、查找）和数据结构（如链表、树、图），这些有助于解决优化问题和提高模型的性能。</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>三、机器学习基础</h2>
+            <p>机器学习是AI的核心组成部分，理解其基本概念和算法是必备技能：</p>
+            <ul>
+                <li><strong>监督学习：</strong>��解分类和回归问题，常见的算法有线性回归、逻辑回归、支持向量机、K近邻（KNN）、决策树、随机森林等。</li>
+                <li><strong>无监督学习：</strong>理解聚类（如K-means、层次聚类）、降维（如主成分分析PCA）等算法。</li>
+                <li><strong>强化学习：</strong>掌握智能体如何在环境中学习最佳策略以获得最大化的奖励（如Q-learning、Deep Q Network）。</li>
+                <li><strong>模型评估：</strong>学习交叉验证、混淆矩阵、精确率、召回率、F1分数、ROC曲线等评估模型性能的方法。</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>四、深度学习基础</h2>
+            <p>深度学习是AI中的重要分支，主要以神经网络为基础：</p>
+            <ul>
+                <li><strong>人工神经网络（ANN）：</strong>理解基本的网络结构（输入层、隐藏层、输出层）、前向传播和反向传播的工作原理。</li>
+                <li><strong>卷积神经网络（CNN）：</strong>掌握CNN的结构及其在图像处理中的应用，了解卷积层、池化层、激活函数（如ReLU）的作用。</li>
+                <li><strong>循环神经网络（RNN）：</strong>学习RNN在序列数据（如时���序列、自然语言处理）中的应用，理解其变体如长短期记忆网络（LSTM）和门控循环单元（GRU）。</li>
+                <li><strong>生成模型：</strong>如生成对抗网络（GAN）用于生成数据（图像、文本）或自动化内容生成。</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>五、数据科学与特征工程</h2>
+            <p>数据是AI系统的燃料，如何处理和准备数据对模型性能至关重要：</p>
+            <ul>
+                <li><strong>数据预处理：</strong>掌握数据清洗（处理缺失值、异常值等）、标准化、归一化等常用的技术。</li>
+                <li><strong>特征工程：</strong>了解如何提取和选择有用的特征、特征缩放、特征交互等技术，以提升模型性能。</li>
+                <li><strong>数据增强：</strong>在图像处理等任务中，学习如何通过数据增强（如旋转、裁剪、翻转等）增加样本量，避免过拟合。</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>六、常用框架与工具</h2>
+            <p>学习并掌握AI常用的框架和工具有助于提升开发效率：</p>
+            <ul>
+                <li><strong>TensorFlow和PyTorch：</strong>最常用的深度学习框架，掌握如何构建、训练和部署深度神经网络。</li>
+                <li><strong>Keras：</strong>一个高层API，简化了TensorFlow的使用，适合快速原型开发。</li>
+                <li><strong>Scikit-learn：</strong>Python中最常用的机器学习库，提供了许多经典的机器学习算法和评估方法。</li>
+                <li><strong>Jupyter Notebook：</strong>常用于实验、可视化和模型调试的工具。</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>七、计算机视觉与自然语言处理</h2>
+            <p>AI的两个重要应用领域是计算机视觉（CV）和自然语言处理（NLP）：</p>
+            <ul>
+                <li><strong>计算机视觉：</strong>理解图像分类、目标检测、图像分割等任务中的基础算法及应用，如CNN、YOLO、Faster R-CNN等。</li>
+                <li><strong>自然语言处理：</strong>学习文本预处理、词嵌入（Word2Vec、GloVe）、语言模型（如GPT、BERT）及其在文本分类、机器翻译、情感分析中的应用。</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>八、AI理论与伦理</h2>
+            <p>AI的发展需要考虑理论基础和伦理���题：</p>
+            <ul>
+                <li><strong>AI伦理：</strong>了解AI系统在公平性、隐私、安全等方面的挑战，如AI偏见、数据隐私保护、AI决策透明性等。</li>
+                <li><strong>可解释性AI：</strong>理解如何构建能够解释其决策过程的AI模型，尤其是在医疗、金融等领域，模型的可解释性非常重要。</li>
+                <li><strong>AI与自动化：</strong>了解AI在自动化系统中的应用及其对就业、社会的影响。</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 AI知识库 | <a href="#contact">联系我</a> | <a href="#privacy">隐私政策</a></p>
+        <p>最后更新时间：2024-12-24</p>
+    </footer>
+</body>
+</html> 
